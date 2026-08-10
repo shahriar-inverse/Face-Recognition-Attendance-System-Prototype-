@@ -86,7 +86,7 @@ After downloading:
 For example:
 
 ```bash
-cd group-photo-attendance (use ls or your folder name.)
+cd Face-Recognition-Attendance-System-Prototype--main
 ```
 
 Activate it:
