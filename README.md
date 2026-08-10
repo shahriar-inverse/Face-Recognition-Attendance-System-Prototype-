@@ -1,14 +1,12 @@
-# Group Photo Attendance System
-
-Automates attendance for large classroom groups — take one group photo and get an instant Present/Absent list. Built to handle 40-50 people in a single frame.
+# Attendance System.
 
 ## Quick Start
 
 1. Download the ZIP file from this repo
-2. Extract it to a folder and go to that folder.
+2. Extract it to a folder and go to that folder
     for example:
    `cd Face-Recognition-Attendance-System-Prototype--main`
-3. Run `bash setup.sh` (Linux/Mac).
+3. Run `bash setup.sh` (Linux/Mac)
 4. Prepare your reference photos
 5. Run attendance
 
