@@ -148,7 +148,6 @@ Then re-run `python3 attendance.py`.
 
 **Setup failed / packages won't install**
 - Make sure you ran `bash setup.sh` and `source venv/bin/activate`
-- On Windows, use WSL2 instead
 
 **"No face found" errors during enrollment**
 - Photos are blurry, too small, or taken at bad angles
