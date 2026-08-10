@@ -6,16 +6,8 @@
 2. Extract it to a folder and go to that folder
     for example:
    `cd Face-Recognition-Attendance-System-Prototype--main`
-3. Run `bash setup.sh` (Linux/Mac)
-4. Prepare your reference photos
-5. Run attendance
+3. Prepare your reference photos (.jpg)
 
-## What's included
-
-- `enroll.py` - enrolls people by extracting face embeddings from reference photos
-- `attendance.py` - detects faces in group photo and matches them against the database
-- `requirements.txt` - Python dependencies (insightface, opencv-python, onnxruntime, numpy)
-- `setup.sh` - automated setup script (Linux/Mac only)
 
 ## Installation
 
@@ -56,7 +48,7 @@ reference_photos/
 ![Database Structure](database-structure.jpeg)
 
 **Rules:**
-- Folder name = Student ID (1, 2, 3, etc.)
+- Folder name = Student ID or ID and Name. (1, 2, 3, or 01 Simi, 02 Kaswser etc)
 - Photos must be `.jpg` format
 - Multiple photos per person = better accuracy (use different angles/lighting)
 - At least one clear, front-facing photo per person recommended
@@ -87,7 +79,7 @@ If anyone is skipped, replace that photo with a clearer one and re-run.
 
 Place your group photo in the same folder as the scripts and name it `group_photo.jpg`.
 
-```bash
+```
 python3 attendance.py
 ```
 
