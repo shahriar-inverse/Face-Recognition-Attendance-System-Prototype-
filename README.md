@@ -166,4 +166,4 @@ Then re-run `python3 attendance.py`.
 
 ## Privacy
 
-This repo contains code only - no face data or photos. All your `reference_photos/`, `enrolled_faces.pkl`, group photos, and attendance results stay on your machine only.
+This repo contains code only - no face data or photos. All your `reference_photos`, `enrolled_faces.pkl`, group photos, and attendance results stay on your machine only.
