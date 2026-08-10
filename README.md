@@ -12,10 +12,10 @@
 
 ## What's included
 
-- `enroll.py` — enrolls people by extracting face embeddings from reference photos
-- `attendance.py` — detects faces in group photo and matches them against the database
-- `requirements.txt` — Python dependencies (insightface, opencv-python, onnxruntime, numpy)
-- `setup.sh` — automated setup script (Linux/Mac only)
+- `enroll.py` - enrolls people by extracting face embeddings from reference photos
+- `attendance.py` - detects faces in group photo and matches them against the database
+- `requirements.txt` - Python dependencies (insightface, opencv-python, onnxruntime, numpy)
+- `setup.sh` - automated setup script (Linux/Mac only)
 
 ## Installation
 
@@ -27,7 +27,7 @@ source venv/bin/activate
 ```
 
 This creates a virtual environment and installs all dependencies. The face-recognition model (~280MB) downloads automatically on first use.
-(Native Windows Python often fails compiling insightface — WSL2 is the easiest solution)
+(Native Windows Python often fails compiling insightface - WSL2 is the easiest solution)
 
 ## Setting up your database
 
@@ -93,7 +93,7 @@ python3 attendance.py
 
 **Output files:**
 
-1. **`attendance.csv`** — the attendance list
+1. **`attendance.csv`** - the attendance list
    ```
    Name,Status
    1,Present
@@ -102,7 +102,7 @@ python3 attendance.py
    4,Present
    ```
 
-2. **`group_photo_annotated.jpg`** — the group photo with face detections marked
+2. **`group_photo_annotated.jpg`** - the group photo with face detections marked
    - **Green box + name** = matched (present)
    - **Red box + score** = no match (unknown)
 
@@ -166,4 +166,4 @@ Then re-run `python3 attendance.py`.
 
 ## Privacy
 
-This repo contains code only — no face data or photos. All your `reference_photos/`, `enrolled_faces.pkl`, group photos, and attendance results stay on your machine only.
+This repo contains code only - no face data or photos. All your `reference_photos/`, `enrolled_faces.pkl`, group photos, and attendance results stay on your machine only.
