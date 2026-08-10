@@ -31,7 +31,7 @@ This creates a virtual environment and installs all dependencies. The face-recog
 
 ## Setting up your database
 
-Create a `reference_photos/` folder in the same directory as the Python files.
+Create a `reference_photos` folder in the same directory as the Python files.
 
 **Folder structure:**
 
