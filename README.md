@@ -131,7 +131,7 @@ A simplified structure looks like this inside the `reference_photos` folder:
 
 
 ```markdown
-![Database Structure](images/database-structure.jpeg)
+![Database Structure]([images/database-structure.jpeg](https://github.com/shahriar-inverse/Face-Recognition-Attendance-System-Prototype-/blob/e7a0be1ab09a301a232ad563f956d2e48037e1d4/database-structure.jpeg))
 ```
 
 Each person can have multiple reference photos. During attendance, the detected face is compared against the available reference data for that person, and the best similarity score is used.
@@ -160,10 +160,10 @@ Try to use clear images where the face is visible.
 Run the enrollment script:
 
 ```bash
-python3 <enrollment-script>.py
+python3 enroll.py
 ```
 
-Replace `<enrollment-script>.py` with the actual enrollment script included in the project.
+Replace `enroll.py` with the actual enrollment script included in the project.
 
 The system will detect the face, generate its embedding, and add the person to the database.
 
