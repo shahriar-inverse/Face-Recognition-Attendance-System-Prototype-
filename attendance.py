@@ -1,5 +1,26 @@
 import pickle
 import csv
+import sys
+
+# --- Check all required packages before doing anything else ---
+REQUIRED = {"cv2": "opencv-python", "numpy": "numpy", "insightface": "insightface", "onnxruntime": "onnxruntime"}
+missing = []
+for module_name, package_name in REQUIRED.items():
+    try:
+        __import__(module_name)
+    except ImportError:
+        missing.append(package_name)
+
+if missing:
+    print(f"Missing package(s): {', '.join(missing)}")
+    print()
+    print("Fix:")
+    print("  1. Make sure the virtual environment is active: source venv/bin/activate")
+    print("  2. If it's already active, the venv may be broken after a system update.")
+    print("     Recreate it: rm -rf venv && bash setup.sh")
+    sys.exit(1)
+# --- End check ---
+
 import cv2
 import numpy as np
 from insightface.app import FaceAnalysis
